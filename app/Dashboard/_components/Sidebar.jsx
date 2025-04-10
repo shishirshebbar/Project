@@ -12,32 +12,27 @@ function Sidebar() {
     const {totalcourses,settotalcourses} = useContext(Coursecount);
     const menu=[
         {
-            name:'Contribute to community',
-            icon:PanelLeftDashed,
-            path:'/Dashboard'
-
-        },{
             name:'Your credits ',
             icon:Coins,
-            path:'/Dashboard/Advance'
+            path:'/Dashboard/ViewCredits'
 
         },
         {
             name:'Contribute notes',
             icon:HandHeart,
-            path:'/Dashboard/Advance'
+            path:'/Dashboard/ContributeNotes'
 
         },
         {
             name:'Your Videos',
             icon:Video,
-            path:'/Dashboard/FAQ'
+            path:'/Dashboard/ViewVideos'
 
         },
         {
             name:'View other notes',
             icon:Eye,
-            path:'/Dashboard/FAQ'
+            path:'/Dashboard/Viewothernotes'
 
         },
         {
@@ -52,7 +47,7 @@ function Sidebar() {
         <div className='h-screen shadow-md '>
             
             <div className='mt-5'>
-                <Link href={'/create'} className='w-full'>
+                <Link href={'/CreateVideo'} className='w-full'>
                                 <Button className="w-full rounded-lg mt-5 ">
                     Create a new video content
                 </Button>
